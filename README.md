@@ -5,7 +5,7 @@ Discuss here: https//
 
 ## How to Build / 怎麼把它 Build 起來
 
-To start up the dev server, you will need Python poetry ^1.1
+To start up the dev server, you will need Python poetry = "^1.1.12"
 
 After poetry installed, run following commands:
 
@@ -36,21 +36,4 @@ The folder structure basically follows `g0v factory` dand the location for sourc
 
 MIT License
 
-## **套件**
 
-`python` = "^3.6.2-"
-`Flask` = "^2.0.2"
-`line-bot-sdk` = "^2.0.1"
-`Flask-Cors` = "^3.0.10"
-`pandas` = "1.1.5"
-`mysql-connector-python` = "8.0.26"
-`torch` = "1.10.1"
-`scikit-learn` = "0.24.2"
-`transformers` = "4.12.5"
-`torchvision` = "0.11.2"
-`plotly` = "5.4.0"
-`SQLAlchemy` = "1.4.28"
-`matplotlib` = "3.3.4"
-
-**包裝套件**
-poetry = "^1.1.12"
