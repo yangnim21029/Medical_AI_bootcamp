@@ -5,6 +5,7 @@ import itertools
 from io import BytesIO
 import sys
 
+
 ##模型第三方套件
 import torch
 from torch.autograd import Variable
@@ -85,3 +86,6 @@ def predict(url):
 
     return predicts
 
+if __name__ == "__main__":    
+    print(predict("https://img.ltn.com.tw/Upload/3c/page/2019/08/08/190808-37645-1.jpg"))
+    pass

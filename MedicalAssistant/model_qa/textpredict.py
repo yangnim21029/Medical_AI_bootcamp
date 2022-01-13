@@ -13,14 +13,19 @@ Original file is located at
 # drive.mount('/content/drive')
 
 import os
+
+from transformers import AdamW
+
+import torch
+from torch.utils.data import DataLoader
+import pickle
+import pandas as pd
+import time
+
+
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
 modelversion = "model1"
-
-# filepath = "~/MedicalAssistant/MedicalAssistant/model_qa/model1"
-# modelpath = filepath + "/data_features.pkl"
-# config_file_path = filepath + "/config.json"
-# model_file_path = filepath + "/pytorch_model.bin"
 
 filepath = os.path.join(os.path.abspath(os.path.dirname(__file__)), modelversion)
 modelpath = os.path.join(filepath, "data_features.pkl")
@@ -150,18 +155,8 @@ def convert_data_to_feature(tokenizer, train_data_path):
     return data_features
 
 
-from transformers import AdamW
-
-import torch
-from torch.utils.data import DataLoader
-import pickle
-import pandas as pd
-
-import time
-
-
-
     # load and init
+
 def predicttext(inputs):
     pkl_file = open(modelpath, 'rb')
     data_features = pickle.load(pkl_file)
@@ -192,10 +187,12 @@ def predicttext(inputs):
         predicts = predicts[0]
         max_val = torch.max(predicts)
         label = (predicts == max_val).nonzero().numpy()[0][1]
+        
         ans_label = answer_dic.to_text(label)
         
     
     return(str(ans_label))
 
 if __name__ == "__main__":    
+    print(predicttext("123"))
     pass

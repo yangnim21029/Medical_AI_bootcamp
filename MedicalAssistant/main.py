@@ -84,10 +84,14 @@ pwd= "12345678"
 # test it
 @app.route("/", methods=["GET"])
 def predict2():
-
-    a = predict("https://tfi101.zzboy.xyz/static/15408407001915.jpg")
-    b = predicttext("123")
-    return a
+    __name__ = '__main__'
+    a = DataDic("123")
+    if __name__ == '__main__' :
+        print(__name__)
+        a = predict("https://img.ltn.com.tw/Upload/3c/page/2019/08/08/190808-37645-1.jpg")
+        b = predicttext("123")
+        return a, b
+    return ("執行錯誤")
 
 # line siganature
 @app.route("/callback", methods=['POST'])
