@@ -10,8 +10,7 @@ To start up the dev server, you will need Python poetry = "^1.1.12"
 After poetry installed, run following commands:
 
     poetry install
-    poetry shell
-    python3 app.py
+    poetry run python3 -m flask run --port 5001
 
 Which installs required packages and start the server for you at [http://127.0.0.1:5000](http://127.0.0.1:5000).
 
