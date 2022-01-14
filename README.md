@@ -4,8 +4,8 @@ This is the repoitory for the linebot server.
 Discuss here: https//
 
 model here :
-[densenetSkin.pt](https://storage.cloud.google.com/tfi101_model/densenetSkin.pt) / 
-[model_qa.zip](https://storage.cloud.google.com/tfi101_model/model_qa.zip)
+[densenetSkin.pt](https://storage.googleapis.com/tfi101_model/densenetSkin.pt) / 
+[model_qa.zip](https://storage.googleapis.com/tfi101_model/model_qa.zip)
 
 ## How to Build / 怎麼把它 Build 起來
 
