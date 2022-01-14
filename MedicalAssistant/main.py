@@ -1,4 +1,4 @@
-from __future__ import unicode_literals  #terminal裡面用utf-8
+from __future__ import unicode_literals
 
 #############
 #  flask + line  #
@@ -82,16 +82,11 @@ user="root"
 pwd= "12345678"
 
 # test it
-@app.route("/", methods=["GET"])
+@app.route("/api/v1/", methods=["GET"])
 def predict2():
-    __name__ = '__main__'
-    a = DataDic("123")
-    if __name__ == '__main__' :
-        print(__name__)
-        a = predict("https://img.ltn.com.tw/Upload/3c/page/2019/08/08/190808-37645-1.jpg")
+        # a = predict("https://img.ltn.com.tw/Upload/3c/page/2019/08/08/190808-37645-1.jpg")
         b = predicttext("123")
-        return a, b
-    return ("執行錯誤")
+        return b
 
 # line siganature
 @app.route("/callback", methods=['POST'])
@@ -950,4 +945,4 @@ def createHealtImage(line_id):
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
