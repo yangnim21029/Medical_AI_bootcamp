@@ -4,8 +4,8 @@ This is the repoitory for the linebot server.
 Discuss here: https//
 
 model here :
-[densenetSkin.pt](https://storage.cloud.google.com/tfi101_model/densenetSkin.pt?_ga=2.268373638.-988426728.1642160054&_gac=1.260146815.1642178755.CjwKCAiA24SPBhB0EiwAjBgkhtXZsRIypI4tD_3T38gYX-uWnVg8rGhwgS7uTdVmHTMJjrz5EzoIoxoCiaEQAvD_BwE)
-[model_qa.zip](https://storage.cloud.google.com/tfi101_model/model_qa.zip?_ga=2.30008887.-988426728.1642160054&_gac=1.228813678.1642178755.CjwKCAiA24SPBhB0EiwAjBgkhtXZsRIypI4tD_3T38gYX-uWnVg8rGhwgS7uTdVmHTMJjrz5EzoIoxoCiaEQAvD_BwE)
+[densenetSkin.pt](https://storage.cloud.google.com/tfi101_model/densenetSkin.pt) / 
+[model_qa.zip](https://storage.cloud.google.com/tfi101_model/model_qa.zip)
 
 ## How to Build / 怎麼把它 Build 起來
 
