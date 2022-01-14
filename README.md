@@ -5,7 +5,7 @@ Discuss here: https//
 
 model here :
 [densenetSkin.pt](https://storage.googleapis.com/tfi101_model/densenetSkin.pt) / 
-[model_qa.zip](https://storage.googleapis.com/tfi101_model/model_qa.zip)
+[model_qa.zip](https://storage.googleapis.com/tfi101_model/model1.zip)
 
 ## How to Build / 怎麼把它 Build 起來
 
