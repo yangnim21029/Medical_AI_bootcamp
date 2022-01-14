@@ -81,13 +81,6 @@ db = "healthrobot"
 user="root"
 pwd= "12345678"
 
-# test it
-@app.route("/api/v1/", methods=["GET"])
-def predict2():
-        # a = predict("https://img.ltn.com.tw/Upload/3c/page/2019/08/08/190808-37645-1.jpg")
-        b = predicttext("123")
-        return b
-
 # line siganature
 @app.route("/callback", methods=['POST'])
 def callback():
