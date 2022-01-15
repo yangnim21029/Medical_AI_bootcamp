@@ -27,7 +27,7 @@ from logging import error
 ########
 # model script
 ########
-from model_qa.textpredict import predicttext, DataDic
+# from model_qa.textpredict import predicttext, DataDic
 from model_skin.skinpredict import predict
 
 
@@ -61,7 +61,7 @@ import string
 #  parser  #
 #########
 from urllib.parse import parse_qsl
-
+import requests
 ## conifg setting
 app = Flask(__name__)
 CORS(app)
@@ -338,7 +338,7 @@ def handle_message(event):
             is_last_two_bert = lastTwoSentence[1][0] == '我想進一步了解我的症狀'
 
         if is_last_one_bert:
-            pretext = predicttext(mtext)
+            pretext = requests.get("http://127.0.0.1:8000/"+ event.message.text).text
             setChatSQL(line_id, event.message.id, 1, event.message.text, pretext)
             line_bot_api.reply_message(event.reply_token, [TextSendMessage(text="傳送地圖(Location)會得到附近星數最高且評論最多的醫院"), TextSendMessage(text=pretext)])
         else:
