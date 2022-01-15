@@ -15,7 +15,8 @@ RUN git clone https://github.com/yangnim21029/tfi101_medicalAssistant.git
 RUN cd MedicalAssistant
 
 # poetry套件相依與管理
-RUN curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python3
+RUN curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python3 -
+RUN sudo apt-get install python3-distutils
 ENV PATH "${PATH}:/root/.poetry/bin"
 RUN poetry config virtualenvs.create false
 COPY pyproject.toml poetry.lock ./

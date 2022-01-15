@@ -3,6 +3,10 @@ This is the repoitory for the linebot server.
 
 Discuss here: https//
 
+model here :
+[densenetSkin.pt](https://storage.googleapis.com/tfi101_model/densenetSkin.pt) / 
+[model_qa.zip](https://storage.googleapis.com/tfi101_model/model1.zip)
+
 ## How to Build / 怎麼把它 Build 起來
 
 To start up the dev server, you will need Python poetry = "^1.1.12"
@@ -10,8 +14,8 @@ To start up the dev server, you will need Python poetry = "^1.1.12"
 After poetry installed, run following commands:
 
     poetry install
-    poetry shell
-    python3 app.py
+    cd tfi101_medicalAssistant/MedicalAssistant/   &&
+    poetry run python3 -m flask run --port 5001
 
 Which installs required packages and start the server for you at [http://127.0.0.1:5000](http://127.0.0.1:5000).
 
