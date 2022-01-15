@@ -15,7 +15,7 @@ After poetry installed, run following commands:
 
     poetry install
     cd tfi101_medicalAssistant/MedicalAssistant/   &&
-    poetry run python3 -m flask run --port 5001
+    poetry run python3 -m flask run --port 5000
 
 Which installs required packages and start the server for you at [http://127.0.0.1:5000](http://127.0.0.1:5000).
 
