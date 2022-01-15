@@ -13,15 +13,8 @@ Original file is located at
 # drive.mount('/content/drive')
 
 import os
-
-from transformers import AdamW
-
 import torch
-from torch.utils.data import DataLoader
 import pickle
-import pandas as pd
-import time
-
 
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
