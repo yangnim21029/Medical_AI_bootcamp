@@ -176,7 +176,7 @@ def handle_message(event):
         content = hos_filter.getTargetClass(event.message.latitude, event.message.longitude, class_name)
         line_bot_api.reply_message(event.reply_token, FlexSendMessage(alt_text='為您推薦具有高評價的醫院', contents=content))
     else:
-        content = get_latitude_longtitude(event.message.latitude, event.message.longitude)
+        content = hos_filter.get_hos_info(event.message.latitude, event.message.longitude)
         line_bot_api.reply_message(event.reply_token, FlexSendMessage(alt_text='為您推薦最近的醫院', contents=content))
 
 
