@@ -2,7 +2,6 @@
 import os
 import requests
 import itertools
-from io import BytesIO
 import sys
 
 
@@ -18,7 +17,7 @@ from PIL import Image
 
 #
 modelpath= os.path.abspath(os.path.dirname(__file__) + "/densenetSkin.pt")
-print(modelpath)
+print("模型預測開始")
 def switchName(num):
     if num == 0:
         return '光化性角化病和表皮內層癌(akiec)'
@@ -54,8 +53,6 @@ def initialize_model(feature_extract):
 
 # 模型方法
 def predict(url):
-    req = requests.get(url)
-    url = BytesIO(req.content)
 
     feature_extract = False
     model_ft, input_size = initialize_model(feature_extract)
