@@ -71,7 +71,6 @@ line_bot_api = LineBotApi('RpNrYYhbu9UtDP5vpYs6wJceOs14I0Sunos1gSe9p7Q/6+cbtf3bb
 handler = WebhookHandler('81ee9a47b1eab6c88040d2541d1fe94e')
 liffid = '1656669589-VqABoK4G'
 liffida = '1656669589-APB3GvLz'
-ngrokpath = "https://d18c-1-164-240-208.ngrok.io"
 is_no_user_test = False # True 為 未註冊用戶，False 為 正常狀況
 is_last_bert = False
 
@@ -115,8 +114,7 @@ def handle_pic(event):
         for chunk in image_content.iter_content():
             fd.write(chunk)
 
-    url = ngrokpath + path[1::]
-    result = predict(url)
+    result = predict(path)
 
     line_id = event.source.user_id
     setChatSQL(line_id, event.message.id, 2, path[1::], result)
