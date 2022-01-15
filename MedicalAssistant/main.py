@@ -45,7 +45,6 @@ from plotly.offline import init_notebook_mode, plot_mpl
 import plotly.express as px
 import pandas as pd
 from PIL import Image
-import matplotlib.pyplot as plt
 
 #########
 # python #
