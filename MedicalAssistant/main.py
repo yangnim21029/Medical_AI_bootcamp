@@ -76,7 +76,7 @@ is_no_user_test = False # True 為 未註冊用戶，False 為 正常狀況
 is_last_bert = False
 
 #config db
-host = "127.0.0.1"
+host = "35.232.178.201"
 db = "healthrobot"
 user="root"
 pwd= "12345678"
