@@ -15,6 +15,7 @@ Original file is located at
 import os
 import torch
 import pickle
+from transformers import BertConfig, BertForSequenceClassification, BertTokenizer
 
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
