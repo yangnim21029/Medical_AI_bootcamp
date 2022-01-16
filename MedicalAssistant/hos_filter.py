@@ -9,7 +9,7 @@ config = configparser.ConfigParser()
 config.read('config.ini')
 
 GOOGLE_API_KEY = "AIzaSyBC9OXMvpGIVJ5FVakJ00oQXEPq9j5E804"
-submit_url = config.get('line-bot', 'end_point')+"/success"
+# submit_url = config.get('line-bot', 'end_point')+"/success"
 #'放入自己的google api key'
 
 # 計算距離
