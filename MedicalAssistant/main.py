@@ -68,18 +68,18 @@ import configparser
 app = Flask(__name__)
 CORS(app)
 
-config = configparser.ConfigParser()
-config.read('config.ini')
+# config = configparser.ConfigParser()
+# config.read('config.ini')
 
-line_bot_api = LineBotApi(config.get('line-bot', 'channel_access_token'))
-handler = WebhookHandler(config.get('line-bot', 'channel_secret'))
-liffid = config.get('line-bot', 'liff_home')
-liffida = config.get('line-bot', 'liff_health')
+# line_bot_api = LineBotApi(config.get('line-bot', 'channel_access_token'))
+# handler = WebhookHandler(config.get('line-bot', 'channel_secret'))
+# liffid = config.get('line-bot', 'liff_home')
+# liffida = config.get('line-bot', 'liff_health')
 
-# line_bot_api = LineBotApi('RpNrYYhbu9UtDP5vpYs6wJceOs14I0Sunos1gSe9p7Q/6+cbtf3bb38M58+zWFXyo1DU0Zu4W+Ekfdw5+AaH2dpyTv71RWZPg5ay6WVsagFjRvn2DTeJdNTfEZSmtixuaCbzZoFUCaUCWfAfitcrPwdB04t89/1O/w1cDnyilFU=')
-# handler = WebhookHandler('81ee9a47b1eab6c88040d2541d1fe94e')
-# liffid = '1656669589-VqABoK4G'
-# liffida = '1656669589-APB3GvLz'
+line_bot_api = LineBotApi('RpNrYYhbu9UtDP5vpYs6wJceOs14I0Sunos1gSe9p7Q/6+cbtf3bb38M58+zWFXyo1DU0Zu4W+Ekfdw5+AaH2dpyTv71RWZPg5ay6WVsagFjRvn2DTeJdNTfEZSmtixuaCbzZoFUCaUCWfAfitcrPwdB04t89/1O/w1cDnyilFU=')
+handler = WebhookHandler('81ee9a47b1eab6c88040d2541d1fe94e')
+liffid = '1656669589-VqABoK4G'
+liffida = '1656669589-APB3GvLz'
 is_no_user_test = False # True 為 未註冊用戶，False 為 正常狀況
 is_last_bert = False
 
