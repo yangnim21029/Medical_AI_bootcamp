@@ -1,5 +1,5 @@
 ﻿# Byte-compiled / optimized / DLL files
 __pycache__/
-static/*
+static/
 model_qa/model1/*
 model_skin/*.pt
