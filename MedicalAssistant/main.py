@@ -275,12 +275,16 @@ def handle_message(event):
                 line_id = 'fagg245wrr'
 
             hasUse = isExistUser(line_id)
-
+        ########
+        #
+        # RiCH MENU
+        #
+        #########
             if hasUse:
                 createHealtImage(line_id)
 
                 path = "./static/" + line_id + ".png"
-                url = ngrokpath + path[1::]
+                url ="http://127.0.0.1:5000" + path[1::]
                 print(url)
                 image_message = ImageSendMessage(
                     original_content_url=url,  #### 靜態檔案的url
