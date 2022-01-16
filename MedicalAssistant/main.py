@@ -110,6 +110,11 @@ def get_frame(imageId):
         resp = Response(image, mimetype="image/png")
         return resp
 
+# 
+@app.route('/success')
+def submitSuccess():
+	return render_template('submit-success.html')
+
 
 @handler.add(MessageEvent, message=ImageMessage)
 def handle_pic(event):
