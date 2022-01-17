@@ -12,6 +12,7 @@ RUN apt update && apt install -qqy wget && wget -P /model_skin/ https://storage.
 COPY . /model_skin
 
 COPY app.py /
+COPY skinpredict.py /
 
 
 EXPOSE 5001
