@@ -58,4 +58,6 @@ RUN python3 -m pip install --no-cache-dir --upgrade pip && pip install --no-cach
 
 WORKDIR /
 
+EXPOSE 5000
+
 CMD ["python3", "main.py"]
