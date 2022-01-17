@@ -9,9 +9,9 @@ RUN python3 -m pip install --no-cache-dir --upgrade pip && python3 -m pip instal
 # download model
 RUN apt update && apt install -qqy wget && wget -P /model_skin/ https://storage.googleapis.com/tfi101linebot/densenetSkin.pt
 
-COPY ./model_skin /model_skin
+COPY . /model_skin
 
-COPY app.py /app.py
+COPY app.py /
 
 
 EXPOSE 5001
