@@ -4,7 +4,7 @@ services:
    app:
       build: ./MedicalAssistant/
       ports:
-      - "5000:5000"
+      - "80:5000"
       volumes:
       - ./MedicalAssistant/static:/static
       image: app_container
@@ -13,11 +13,11 @@ services:
    model_text:
       build: ./MedicalAssistant/model_qa
       ports:
-      - "6000:5000"
+      - "5001:5001"
       image: model_text_container
       
    model_skin:
       build: ./MedicalAssistant/model_skin
       ports:
-      - "7000:5000"
+      - "5002:5002"
       image: model_skin_container
