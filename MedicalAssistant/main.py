@@ -28,7 +28,7 @@ from logging import error
 # model script
 ########
 # from model_qa.textpredict import predicttext, DataDic
-from model_skin.skinpredict import predict
+#from model_skin.skinpredict import predict
 
 
 ########
