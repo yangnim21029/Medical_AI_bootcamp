@@ -42,13 +42,13 @@
 #CMD python3 app.py
 
 FROM python:3.6
-WORKDIR /app
+WORKDIR /
 
-COPY requirements.txt /app
+COPY . /
 
 #安裝環境   
-RUN python3 -m pip install --no-cache-dir --upgrade pip && pip install --no-cache-dir -r requirements.txt && rm MedicalAssistant.tgz
+RUN python3 -m pip install --no-cache-dir --upgrade pip && pip install --no-cache-dir -r requirements.txt 
 
-WORKDIR /app/MedicalAssistant
+WORKDIR /
 
 CMD ["python3", "main.py"]
