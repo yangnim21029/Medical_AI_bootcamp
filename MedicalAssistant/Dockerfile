@@ -44,7 +44,14 @@
 FROM python:3.6
 WORKDIR /
 
-COPY . /
+#COPY . /
+COPY filter_data/ /
+COPY static/ /
+COPY templates/ /
+COPY hos_filter.py /
+COPY main.py /
+COPY requirements.txt /
+COPY visualition.py /
 
 #安裝環境   
 RUN python3 -m pip install --no-cache-dir --upgrade pip && pip install --no-cache-dir -r requirements.txt 
