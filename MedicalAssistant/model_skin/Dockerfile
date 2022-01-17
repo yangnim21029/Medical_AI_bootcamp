@@ -16,5 +16,5 @@ COPY app.py /
 COPY skinpredict.py /
 
 
-#EXPOSE 7000
+EXPOSE 5000
 CMD python3 app.py
