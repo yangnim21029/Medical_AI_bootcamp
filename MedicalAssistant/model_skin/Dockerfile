@@ -4,7 +4,7 @@ FROM python:3.6.15-slim-bullseye
 WORKDIR /
 
 RUN python3 -m pip install --no-cache-dir --upgrade pip && python3 -m pip install torch==1.10.1+cpu  torchaudio==0.10.1+cpu -f https://download.pytorch.org/whl/cpu/torch_stable.html && \
-    pip install flask requests
+    pip install flask requests pillow==8.4.0 tqdm
 
 # download model
 RUN apt update && apt install -qqy wget && wget -P /model_skin/ https://storage.googleapis.com/tfi101linebot/densenetSkin.pt
