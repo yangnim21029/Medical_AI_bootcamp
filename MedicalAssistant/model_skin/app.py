@@ -1,4 +1,4 @@
-from model_skin.skinpredict import predict
+from skinpredict import predict
 from flask import Flask
 
 app=Flask(__name__)
