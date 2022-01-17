@@ -20,5 +20,5 @@ RUN wget -P /model1 https://storage.googleapis.com/tfi101_model/model1/config.js
 COPY app.py /app.py
 COPY textpredict.py /textpredict.py
 
-EXPOSE 5000
+#EXPOSE 5000
 CMD python3 app.py
