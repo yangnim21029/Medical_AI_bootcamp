@@ -13,11 +13,11 @@ services:
    model_text:
       build: ./MedicalAssistant/model_qa
       ports:
-      - "6000:6000"
+      - "6000:5000"
       image: model_text_container
       
    model_skin:
       build: ./MedicalAssistant/model_skin
       ports:
-      - "7000:7000"
+      - "7000:5000"
       image: model_skin_container
