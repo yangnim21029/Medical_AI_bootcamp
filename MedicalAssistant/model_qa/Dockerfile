@@ -1,5 +1,6 @@
 # Pull base image
-FROM python:3.6.15-slim-bullseye
+#FROM python:3.6.15-slim-bullseye
+FROM python:3.6
 
 WORKDIR /
 
