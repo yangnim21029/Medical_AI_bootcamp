@@ -1,5 +1,6 @@
 # Pull base image
-FROM python:3.6.15-slim-bullseye
+#FROM python:3.6.15-slim-bullseye
+FROM python:3.6
 
 WORKDIR /
 
@@ -15,5 +16,5 @@ COPY app.py /
 COPY skinpredict.py /
 
 
-EXPOSE 5001
+EXPOSE 7000
 CMD python3 app.py
