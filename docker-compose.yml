@@ -4,7 +4,7 @@ services:
    app:
       build: ./MedicalAssistant/
       ports:
-      - "5000:5000"
+      - "80:5000"
       volumes:
       - ./MedicalAssistant/static:/static
       image: app_container
