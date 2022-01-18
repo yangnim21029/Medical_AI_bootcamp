@@ -53,7 +53,8 @@ def initialize_model(feature_extract):
 
 # 模型方法
 def predict(url):
-    url = requests.get(url)
+    req = requests.get(url)
+    url = req.content
     
     
     feature_extract = False
