@@ -53,7 +53,9 @@ def initialize_model(feature_extract):
 
 # 模型方法
 def predict(url):
-
+    url = requests.get(url)
+    
+    
     feature_extract = False
     model_ft, input_size = initialize_model(feature_extract)
     device = torch.device('cpu')
