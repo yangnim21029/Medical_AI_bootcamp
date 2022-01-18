@@ -8,7 +8,7 @@ RUN python3 -m pip install --no-cache-dir --upgrade pip && python3 -m pip instal
     pip install flask requests pillow==8.4.0 tqdm
 
 # download model
-RUN apt update && apt install -qqy wget && wget -P /model_skin/ https://storage.googleapis.com/tfi101linebot/densenetSkin.pt
+RUN apt update && apt install -qqy wget && wget https://storage.googleapis.com/tfi101linebot/densenetSkin.pt
 
 COPY . /model_skin
 
