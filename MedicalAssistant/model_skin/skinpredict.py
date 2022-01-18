@@ -3,7 +3,7 @@ import os
 import requests
 import itertools
 import sys
-
+from io import BytesIO
 
 ##模型第三方套件
 import torch
@@ -54,8 +54,7 @@ def initialize_model(feature_extract):
 # 模型方法
 def predict(url):
     req = requests.get(url)
-    url = req.content
-    
+    url = BytesIO(req.content)
     
     feature_extract = False
     model_ft, input_size = initialize_model(feature_extract)
