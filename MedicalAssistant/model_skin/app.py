@@ -3,9 +3,9 @@ from flask import Flask
 import request
 
 app=Flask(__name__)
-@app.route("<Urlimage>", methods=['get'])
+@app.route("<Url_image>", methods=['get'])
 def predictskin(imageId):    
-    output = predict(<Urlimage>)
+    output = predict(<Url_image>)
     return output
 
 if __name__=="__main__":
