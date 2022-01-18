@@ -1,6 +1,5 @@
 from skinpredict import predict
 from flask import Flask
-import request
 
 app=Flask(__name__)
 @app.route("/<Url_image>", methods=['get'])
