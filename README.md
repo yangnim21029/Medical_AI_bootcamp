@@ -1,3 +1,5 @@
+![image](https://user-images.githubusercontent.com/40525124/156202791-b9cf65ad-a02d-440c-bece-32e48f4d6147.png)
+
 # 醫療助理 
 This is the repoitory for the linebot server.
 
