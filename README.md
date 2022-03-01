@@ -39,5 +39,3 @@ fork this
 
 ## project slide & sample
 [展示影片連結](https://drive.google.com/file/d/163f_oElzQnApxLhG8cyWE3oS8Rxk0Rsw/view?usp=sharing)
-
-<img src="https://user-images.githubusercontent.com/40525124/156189582-f16f1f97-49a5-4ece-af67-7b24b3a6e09c.png" alt="Project Sample" width="100"/>
