@@ -32,12 +32,8 @@ The folder structure basically follows `g0v factory` dand the location for sourc
   - `templates` - html go here
 
 ## How to Deploy / 怎麼發佈更新
-...
-...
+fork this
 
-
-## LICENSE
-
-MIT License
-
+## project slide & sample
+https://drive.google.com/file/d/163f_oElzQnApxLhG8cyWE3oS8Rxk0Rsw/view?usp=sharing
 
