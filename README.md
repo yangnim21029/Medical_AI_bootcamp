@@ -1,7 +1,8 @@
 # 醫療助理 
 This is the repoitory for the linebot server.
 
-Discuss here: https//
+require line-bot developer account
+get one here : [line console](https://developers.line.biz/zh-hant/)
 
 model here :
 [densenetSkin.pt](https://storage.googleapis.com/tfi101_model/densenetSkin.pt) / 
